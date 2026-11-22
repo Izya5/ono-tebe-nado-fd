@@ -86,7 +86,6 @@
 
 .aligned-text_left {
   align-self:start;
-  height: 115px;
 }
 
 .aligned-text_center {
@@ -130,6 +129,7 @@
   background-color: transparent;
   color: #fff;
   margin-left: 109px;
+  cursor: pointer;
 }
 
 .lots {
@@ -222,7 +222,7 @@
   gap: 24px;
   grid-template-columns: 335px 1fr;
 }
-
+ 
 .about__logo {
   display: flex;
   justify-content: center;
@@ -231,7 +231,7 @@
   height: 240px;
   border-radius: 50%;
   background-color: black;
-  margin: 35px 47px;
+  margin: 35px auto 47px;
 }
 
 .about__logo-image { 
@@ -254,6 +254,16 @@
   font-size: 20px;
   line-height: 1.2;
   gap: 23px; 
+}
+
+.about__text p:nth-of-type(1) {
+  width: 688px;
+}
+
+/*второй абзац шире по макету, но "на" не переносится на след. строку. */
+
+.about__text p:nth-of-type(2) {
+  width: 693px;
 }
 
 .footer {
